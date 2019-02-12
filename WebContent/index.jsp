@@ -155,7 +155,7 @@
 	</table>
 	<h3>&nbsp;&nbsp;Tips:</h3>
 	<ul>
-		<li>Test:主页面入口<a href="http://localhost:8080/autocrawl/QuartzController?action=get">http://localhost:8080/autocrawl/QuartzController?action=get</a></li>
+		<li>Test:主页面入口<a href="${pageContext.request.contextPath}/QuartzController?action=get">${pageContext.request.contextPath}/QuartzController?action=get</a></li>
 		<li>服务器启动之后，应该先<b>开启调度器</b>(即调度器开启之后，Job任务才能执行)</li>
 		<li>添加时 作业名称(jobName)和触发器名称(triggerName)不能和之前的重复.</li>
 		<li>时间表达式Cron可参考 <a target="_blank" href="http://cron.qqe2.com/">在线Cron时间表达生成</a></li>
@@ -224,9 +224,6 @@
 			}
 		});
 	});
-	
-	
-	
 	</script>
 </body>
 </html>
